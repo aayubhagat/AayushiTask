@@ -1,0 +1,6 @@
+framework module Pods_AayushiTask {
+  umbrella header "Pods-AayushiTask-umbrella.h"
+
+  export *
+  module * { export * }
+}

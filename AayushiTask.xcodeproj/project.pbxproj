@@ -1,0 +1,751 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		43910C3852739465921DA423 /* Pods_AayushiTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E69D6531CB03CF80C21D9EC /* Pods_AayushiTask.framework */; };
+		703CAB822AAEA1BB00AC4A5C /* OnboardProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703CAB812AAEA1BB00AC4A5C /* OnboardProtocols.swift */; };
+		703CAB842AAEB05D00AC4A5C /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703CAB832AAEB05D00AC4A5C /* Router.swift */; };
+		703CAB872AAF553200AC4A5C /* SignUpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703CAB862AAF553200AC4A5C /* SignUpRouter.swift */; };
+		703CAB8B2AAF555300AC4A5C /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703CAB8A2AAF555300AC4A5C /* SignUpPresenter.swift */; };
+		703CAB8D2AAF556100AC4A5C /* SignUpProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703CAB8C2AAF556000AC4A5C /* SignUpProtocol.swift */; };
+		703CAB8F2AAF557100AC4A5C /* SignUpInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703CAB8E2AAF557100AC4A5C /* SignUpInteractor.swift */; };
+		703CAB912AAF558B00AC4A5C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703CAB902AAF558B00AC4A5C /* SignUpViewController.swift */; };
+		7040E8152AAF9BD50054217B /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7040E8142AAF9BD50054217B /* Enum.swift */; };
+		704697AA2AAE2AE800338431 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704697A92AAE2AE800338431 /* AppDelegate.swift */; };
+		704697AC2AAE2AE800338431 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704697AB2AAE2AE800338431 /* SceneDelegate.swift */; };
+		704697B12AAE2AE800338431 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 704697AF2AAE2AE800338431 /* Main.storyboard */; };
+		704697B32AAE2AEB00338431 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 704697B22AAE2AEB00338431 /* Assets.xcassets */; };
+		704697B62AAE2AEB00338431 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 704697B42AAE2AEB00338431 /* LaunchScreen.storyboard */; };
+		704697BF2AAE2FBE00338431 /* OnboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704697BE2AAE2FBE00338431 /* OnboardViewController.swift */; };
+		704697C12AAE2FD200338431 /* OnboardPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704697C02AAE2FD200338431 /* OnboardPresenter.swift */; };
+		704697C32AAE2FE100338431 /* OnboardInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704697C22AAE2FE100338431 /* OnboardInteractor.swift */; };
+		704697C52AAE2FFF00338431 /* OnboardRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704697C42AAE2FFF00338431 /* OnboardRouter.swift */; };
+		704697C72AAE301400338431 /* OnboardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704697C62AAE301400338431 /* OnboardModel.swift */; };
+		704697C92AAE33B700338431 /* OnboardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704697C82AAE33B700338431 /* OnboardCell.swift */; };
+		70659A662AAF6D4400E59F87 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70659A652AAF6D4400E59F87 /* StringExtension.swift */; };
+		70659A692AAF7BE600E59F87 /* VerifyOTPRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70659A682AAF7BE600E59F87 /* VerifyOTPRouter.swift */; };
+		70659A6D2AAF7BFF00E59F87 /* VerifyOTPPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70659A6C2AAF7BFF00E59F87 /* VerifyOTPPresenter.swift */; };
+		70659A6F2AAF7C0C00E59F87 /* VerifyOTPProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70659A6E2AAF7C0C00E59F87 /* VerifyOTPProtocol.swift */; };
+		70659A712AAF7C1900E59F87 /* VerifyOTPInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70659A702AAF7C1900E59F87 /* VerifyOTPInteractor.swift */; };
+		70659A732AAF7C2600E59F87 /* VerifyOTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70659A722AAF7C2600E59F87 /* VerifyOTPViewController.swift */; };
+		70659A762AAF7C4C00E59F87 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70659A752AAF7C4C00E59F87 /* LoginRouter.swift */; };
+		70659A7A2AAF7C6300E59F87 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70659A792AAF7C6300E59F87 /* LoginPresenter.swift */; };
+		70659A7C2AAF7C6E00E59F87 /* LoginProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70659A7B2AAF7C6E00E59F87 /* LoginProtocol.swift */; };
+		70659A7E2AAF7C7D00E59F87 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70659A7D2AAF7C7D00E59F87 /* LoginInteractor.swift */; };
+		70659A802AAF7C8900E59F87 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70659A7F2AAF7C8900E59F87 /* LoginViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2E69D6531CB03CF80C21D9EC /* Pods_AayushiTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AayushiTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4685F474CE1DF16194F329C4 /* Pods-AayushiTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AayushiTask.debug.xcconfig"; path = "Target Support Files/Pods-AayushiTask/Pods-AayushiTask.debug.xcconfig"; sourceTree = "<group>"; };
+		703CAB812AAEA1BB00AC4A5C /* OnboardProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardProtocols.swift; sourceTree = "<group>"; };
+		703CAB832AAEB05D00AC4A5C /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		703CAB862AAF553200AC4A5C /* SignUpRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRouter.swift; sourceTree = "<group>"; };
+		703CAB8A2AAF555300AC4A5C /* SignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
+		703CAB8C2AAF556000AC4A5C /* SignUpProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpProtocol.swift; sourceTree = "<group>"; };
+		703CAB8E2AAF557100AC4A5C /* SignUpInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpInteractor.swift; sourceTree = "<group>"; };
+		703CAB902AAF558B00AC4A5C /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		7040E8142AAF9BD50054217B /* Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
+		704697A62AAE2AE800338431 /* AayushiTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AayushiTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		704697A92AAE2AE800338431 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		704697AB2AAE2AE800338431 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		704697B02AAE2AE800338431 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		704697B22AAE2AEB00338431 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		704697B52AAE2AEB00338431 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		704697B72AAE2AEB00338431 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		704697BE2AAE2FBE00338431 /* OnboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardViewController.swift; sourceTree = "<group>"; };
+		704697C02AAE2FD200338431 /* OnboardPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardPresenter.swift; sourceTree = "<group>"; };
+		704697C22AAE2FE100338431 /* OnboardInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardInteractor.swift; sourceTree = "<group>"; };
+		704697C42AAE2FFF00338431 /* OnboardRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardRouter.swift; sourceTree = "<group>"; };
+		704697C62AAE301400338431 /* OnboardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardModel.swift; sourceTree = "<group>"; };
+		704697C82AAE33B700338431 /* OnboardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardCell.swift; sourceTree = "<group>"; };
+		70659A652AAF6D4400E59F87 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		70659A682AAF7BE600E59F87 /* VerifyOTPRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyOTPRouter.swift; sourceTree = "<group>"; };
+		70659A6C2AAF7BFF00E59F87 /* VerifyOTPPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyOTPPresenter.swift; sourceTree = "<group>"; };
+		70659A6E2AAF7C0C00E59F87 /* VerifyOTPProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyOTPProtocol.swift; sourceTree = "<group>"; };
+		70659A702AAF7C1900E59F87 /* VerifyOTPInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyOTPInteractor.swift; sourceTree = "<group>"; };
+		70659A722AAF7C2600E59F87 /* VerifyOTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyOTPViewController.swift; sourceTree = "<group>"; };
+		70659A752AAF7C4C00E59F87 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		70659A792AAF7C6300E59F87 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		70659A7B2AAF7C6E00E59F87 /* LoginProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProtocol.swift; sourceTree = "<group>"; };
+		70659A7D2AAF7C7D00E59F87 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		70659A7F2AAF7C8900E59F87 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		84F03ADA874A0362C9B51633 /* Pods-AayushiTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AayushiTask.release.xcconfig"; path = "Target Support Files/Pods-AayushiTask/Pods-AayushiTask.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		704697A32AAE2AE800338431 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43910C3852739465921DA423 /* Pods_AayushiTask.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		703CAB792AAEA11C00AC4A5C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				703CAB7E2AAEA17000AC4A5C /* ViewController */,
+				703CAB7D2AAEA16400AC4A5C /* Cells */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		703CAB7A2AAEA12B00AC4A5C /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				704697C22AAE2FE100338431 /* OnboardInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		703CAB7B2AAEA14000AC4A5C /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				704697C02AAE2FD200338431 /* OnboardPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		703CAB7C2AAEA14D00AC4A5C /* Route */ = {
+			isa = PBXGroup;
+			children = (
+				704697C42AAE2FFF00338431 /* OnboardRouter.swift */,
+			);
+			path = Route;
+			sourceTree = "<group>";
+		};
+		703CAB7D2AAEA16400AC4A5C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				704697C82AAE33B700338431 /* OnboardCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		703CAB7E2AAEA17000AC4A5C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				704697BE2AAE2FBE00338431 /* OnboardViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		703CAB7F2AAEA19100AC4A5C /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				704697C62AAE301400338431 /* OnboardModel.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		703CAB802AAEA19D00AC4A5C /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				703CAB812AAEA1BB00AC4A5C /* OnboardProtocols.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		703CAB852AAF54EF00AC4A5C /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				7040E8232AAF9F080054217B /* View */,
+				7040E8222AAF9F000054217B /* Interactor */,
+				7040E8242AAF9F0F0054217B /* Protocol */,
+				7040E8212AAF9EF70054217B /* Presenter */,
+				7040E8202AAF9EF00054217B /* Route */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		7040E8132AAF9BC10054217B /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				703CAB832AAEB05D00AC4A5C /* Router.swift */,
+				70659A652AAF6D4400E59F87 /* StringExtension.swift */,
+				7040E8142AAF9BD50054217B /* Enum.swift */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		7040E8162AAF9E390054217B /* Route */ = {
+			isa = PBXGroup;
+			children = (
+				70659A752AAF7C4C00E59F87 /* LoginRouter.swift */,
+			);
+			path = Route;
+			sourceTree = "<group>";
+		};
+		7040E8172AAF9E450054217B /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				70659A7B2AAF7C6E00E59F87 /* LoginProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		7040E8182AAF9E500054217B /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				70659A792AAF7C6300E59F87 /* LoginPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		7040E8192AAF9E5E0054217B /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				70659A7D2AAF7C7D00E59F87 /* LoginInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		7040E81A2AAF9E690054217B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				70659A7F2AAF7C8900E59F87 /* LoginViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7040E81B2AAF9EA60054217B /* Route */ = {
+			isa = PBXGroup;
+			children = (
+				70659A682AAF7BE600E59F87 /* VerifyOTPRouter.swift */,
+			);
+			path = Route;
+			sourceTree = "<group>";
+		};
+		7040E81C2AAF9EB00054217B /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				70659A6C2AAF7BFF00E59F87 /* VerifyOTPPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		7040E81D2AAF9EB80054217B /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				70659A6E2AAF7C0C00E59F87 /* VerifyOTPProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		7040E81E2AAF9EC90054217B /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				70659A702AAF7C1900E59F87 /* VerifyOTPInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		7040E81F2AAF9ED20054217B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				70659A722AAF7C2600E59F87 /* VerifyOTPViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7040E8202AAF9EF00054217B /* Route */ = {
+			isa = PBXGroup;
+			children = (
+				703CAB862AAF553200AC4A5C /* SignUpRouter.swift */,
+			);
+			path = Route;
+			sourceTree = "<group>";
+		};
+		7040E8212AAF9EF70054217B /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				703CAB8A2AAF555300AC4A5C /* SignUpPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		7040E8222AAF9F000054217B /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				703CAB8E2AAF557100AC4A5C /* SignUpInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		7040E8232AAF9F080054217B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				703CAB902AAF558B00AC4A5C /* SignUpViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7040E8242AAF9F0F0054217B /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				703CAB8C2AAF556000AC4A5C /* SignUpProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		7046979D2AAE2AE800338431 = {
+			isa = PBXGroup;
+			children = (
+				704697A82AAE2AE800338431 /* AayushiTask */,
+				704697A72AAE2AE800338431 /* Products */,
+				9EA8D993DF376A1B9302B4B7 /* Pods */,
+				A1A472B6E9D3C178E7308CBA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		704697A72AAE2AE800338431 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				704697A62AAE2AE800338431 /* AayushiTask.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		704697A82AAE2AE800338431 /* AayushiTask */ = {
+			isa = PBXGroup;
+			children = (
+				704697A92AAE2AE800338431 /* AppDelegate.swift */,
+				704697AB2AAE2AE800338431 /* SceneDelegate.swift */,
+				704697BD2AAE2F6D00338431 /* Onboard */,
+				70659A742AAF7C3200E59F87 /* Login */,
+				70659A672AAF7BCC00E59F87 /* VerifyOTP */,
+				703CAB852AAF54EF00AC4A5C /* SignUp */,
+				7040E8132AAF9BC10054217B /* Misc */,
+				704697AF2AAE2AE800338431 /* Main.storyboard */,
+				704697B22AAE2AEB00338431 /* Assets.xcassets */,
+				704697B42AAE2AEB00338431 /* LaunchScreen.storyboard */,
+				704697B72AAE2AEB00338431 /* Info.plist */,
+			);
+			path = AayushiTask;
+			sourceTree = "<group>";
+		};
+		704697BD2AAE2F6D00338431 /* Onboard */ = {
+			isa = PBXGroup;
+			children = (
+				703CAB792AAEA11C00AC4A5C /* View */,
+				703CAB7A2AAEA12B00AC4A5C /* Interactor */,
+				703CAB7B2AAEA14000AC4A5C /* Presenter */,
+				703CAB802AAEA19D00AC4A5C /* Protocol */,
+				703CAB7F2AAEA19100AC4A5C /* Entity */,
+				703CAB7C2AAEA14D00AC4A5C /* Route */,
+			);
+			path = Onboard;
+			sourceTree = "<group>";
+		};
+		70659A672AAF7BCC00E59F87 /* VerifyOTP */ = {
+			isa = PBXGroup;
+			children = (
+				7040E81F2AAF9ED20054217B /* View */,
+				7040E81E2AAF9EC90054217B /* Interactor */,
+				7040E81D2AAF9EB80054217B /* Protocol */,
+				7040E81C2AAF9EB00054217B /* Presenter */,
+				7040E81B2AAF9EA60054217B /* Route */,
+			);
+			path = VerifyOTP;
+			sourceTree = "<group>";
+		};
+		70659A742AAF7C3200E59F87 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				7040E81A2AAF9E690054217B /* View */,
+				7040E8192AAF9E5E0054217B /* Interactor */,
+				7040E8182AAF9E500054217B /* Presenter */,
+				7040E8172AAF9E450054217B /* Protocol */,
+				7040E8162AAF9E390054217B /* Route */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		9EA8D993DF376A1B9302B4B7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4685F474CE1DF16194F329C4 /* Pods-AayushiTask.debug.xcconfig */,
+				84F03ADA874A0362C9B51633 /* Pods-AayushiTask.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A1A472B6E9D3C178E7308CBA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2E69D6531CB03CF80C21D9EC /* Pods_AayushiTask.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		704697A52AAE2AE800338431 /* AayushiTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 704697BA2AAE2AEB00338431 /* Build configuration list for PBXNativeTarget "AayushiTask" */;
+			buildPhases = (
+				953AF20D73E48F477BB2C675 /* [CP] Check Pods Manifest.lock */,
+				704697A22AAE2AE800338431 /* Sources */,
+				704697A32AAE2AE800338431 /* Frameworks */,
+				704697A42AAE2AE800338431 /* Resources */,
+				A970AD3747AFF8DF3D71544A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AayushiTask;
+			productName = AayushiTask;
+			productReference = 704697A62AAE2AE800338431 /* AayushiTask.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7046979E2AAE2AE800338431 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					704697A52AAE2AE800338431 = {
+						CreatedOnToolsVersion = 13.4;
+					};
+				};
+			};
+			buildConfigurationList = 704697A12AAE2AE800338431 /* Build configuration list for PBXProject "AayushiTask" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7046979D2AAE2AE800338431;
+			productRefGroup = 704697A72AAE2AE800338431 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				704697A52AAE2AE800338431 /* AayushiTask */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		704697A42AAE2AE800338431 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				704697B62AAE2AEB00338431 /* LaunchScreen.storyboard in Resources */,
+				704697B32AAE2AEB00338431 /* Assets.xcassets in Resources */,
+				704697B12AAE2AE800338431 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		953AF20D73E48F477BB2C675 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AayushiTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A970AD3747AFF8DF3D71544A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AayushiTask/Pods-AayushiTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AayushiTask/Pods-AayushiTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AayushiTask/Pods-AayushiTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		704697A22AAE2AE800338431 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				703CAB872AAF553200AC4A5C /* SignUpRouter.swift in Sources */,
+				70659A692AAF7BE600E59F87 /* VerifyOTPRouter.swift in Sources */,
+				703CAB842AAEB05D00AC4A5C /* Router.swift in Sources */,
+				70659A7E2AAF7C7D00E59F87 /* LoginInteractor.swift in Sources */,
+				70659A762AAF7C4C00E59F87 /* LoginRouter.swift in Sources */,
+				703CAB8F2AAF557100AC4A5C /* SignUpInteractor.swift in Sources */,
+				704697C72AAE301400338431 /* OnboardModel.swift in Sources */,
+				703CAB8D2AAF556100AC4A5C /* SignUpProtocol.swift in Sources */,
+				703CAB912AAF558B00AC4A5C /* SignUpViewController.swift in Sources */,
+				7040E8152AAF9BD50054217B /* Enum.swift in Sources */,
+				70659A6F2AAF7C0C00E59F87 /* VerifyOTPProtocol.swift in Sources */,
+				703CAB8B2AAF555300AC4A5C /* SignUpPresenter.swift in Sources */,
+				70659A7A2AAF7C6300E59F87 /* LoginPresenter.swift in Sources */,
+				704697AA2AAE2AE800338431 /* AppDelegate.swift in Sources */,
+				70659A6D2AAF7BFF00E59F87 /* VerifyOTPPresenter.swift in Sources */,
+				704697BF2AAE2FBE00338431 /* OnboardViewController.swift in Sources */,
+				70659A802AAF7C8900E59F87 /* LoginViewController.swift in Sources */,
+				70659A7C2AAF7C6E00E59F87 /* LoginProtocol.swift in Sources */,
+				70659A712AAF7C1900E59F87 /* VerifyOTPInteractor.swift in Sources */,
+				704697C52AAE2FFF00338431 /* OnboardRouter.swift in Sources */,
+				703CAB822AAEA1BB00AC4A5C /* OnboardProtocols.swift in Sources */,
+				704697AC2AAE2AE800338431 /* SceneDelegate.swift in Sources */,
+				70659A662AAF6D4400E59F87 /* StringExtension.swift in Sources */,
+				704697C92AAE33B700338431 /* OnboardCell.swift in Sources */,
+				704697C32AAE2FE100338431 /* OnboardInteractor.swift in Sources */,
+				704697C12AAE2FD200338431 /* OnboardPresenter.swift in Sources */,
+				70659A732AAF7C2600E59F87 /* VerifyOTPViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		704697AF2AAE2AE800338431 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				704697B02AAE2AE800338431 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		704697B42AAE2AEB00338431 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				704697B52AAE2AEB00338431 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		704697B82AAE2AEB00338431 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		704697B92AAE2AEB00338431 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		704697BB2AAE2AEB00338431 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4685F474CE1DF16194F329C4 /* Pods-AayushiTask.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AayushiTask/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.it.demo.AayushiTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		704697BC2AAE2AEB00338431 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84F03ADA874A0362C9B51633 /* Pods-AayushiTask.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AayushiTask/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.it.demo.AayushiTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		704697A12AAE2AE800338431 /* Build configuration list for PBXProject "AayushiTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				704697B82AAE2AEB00338431 /* Debug */,
+				704697B92AAE2AEB00338431 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		704697BA2AAE2AEB00338431 /* Build configuration list for PBXNativeTarget "AayushiTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				704697BB2AAE2AEB00338431 /* Debug */,
+				704697BC2AAE2AEB00338431 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7046979E2AAE2AE800338431 /* Project object */;
+}
